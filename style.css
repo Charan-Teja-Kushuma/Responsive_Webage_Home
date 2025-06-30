@@ -4,6 +4,26 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
+.video:before {
+    content: var(--background-overlay);
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    mix-blend-mode: var(--overlay-mix-blend-mode);
+    opacity: var(--overlay-opacity);
+    transition: var(--overlay-transition);
+    border-radius: var(--border-radius);
+}
+h1 {
+    color: #ff0000;
+    font-size: 14px; /* Changed from 90px or 16px to 14px */
+    font-weight: 100;
+}
+
 .banner{
     width: 100%;
     height: 100vh;
